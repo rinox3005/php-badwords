@@ -1,6 +1,6 @@
-## PHP Badwords
+# PHP Badwords
 
-# Descrizione
+## Descrizione
 
 Creare un form PHP che permetta di inviare due campi: un paragrafo ed una parola da censurare.
 Gestire il tutto con due file diversi.
@@ -13,6 +13,6 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 
 - stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (\*\*\*) tutte le occorrenze della parola da censurare.
 
-# Bonus
+## Bonus
 
 Aggiungete bootstrap alla pagina per dare un po' di stile al risultato.
