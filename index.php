@@ -12,7 +12,7 @@
 <body>
     <main>
         <!-- Form Section-->
-        <section class="container-sm mt-4 m-auto">
+        <section class="container mt-4 m-auto">
             <h1 class="text-center mb-5">PHP BADWORDS</h1>
             <form action="badwords.php" method="GET">
                 <!-- Word Input -->
