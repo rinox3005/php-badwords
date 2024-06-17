@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,10 +13,10 @@
     <main>
         <section class="container-sm mt-4 m-auto">
             <h1 class="text-center mb-5">PHP BADWORDS</h1>
-            <form action="">
+            <form action="badwords.php" method="GET">
                 <div class="mb-3 ">
                     <label for="exampleFormControlInput1" class="form-label">Censored Word</label>
-                    <input type="text" class="form-control" name="word" id="exampleFormControlInput1" placeholder="Word to censor">
+                    <input type="text" class="form-control" name="word" id="wordToCensor" placeholder="Word to censor">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Text to check</label>
