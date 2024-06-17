@@ -2,6 +2,7 @@
 $word = $_GET['word'];
 $text = $_GET['text'];
 
+// calcolo il testo censurato e lo assegno ad una nuova variabile
 $censoredText = str_replace($word, '***', $text);
 
 // // concatena la due elementi con uno spazio nel mezzo
@@ -42,25 +43,27 @@ $censoredText = str_replace($word, '***', $text);
 
 <body>
     <main>
-        <h1 class="text-center pt-5 pb-3">Bad Word?</h1>
+        <h1 class="text-center pt-5 pb-3 text-primary">Bad Word?</h1>
         <section class="container mt-4 m-auto row">
-            <div class="col-6 border p-4">
-                <h2 class="text-center mb-5">Uncensored Text</h2>
-                <h5 class="d-inline">Word to censor:</h5>
-                <span class="fs-6 ">"<?php echo $word ?>"</span>
-                <h5 class="mt-5">Text to check:</h5>
-                <p class="fs-6 mb-5">"<?php echo $text ?>"</p>
-                <h5 class="d-inline">Text length:</h5>
-                <span class="fs-6">"<?php echo strlen($text) ?>"</span>
+            <!-- testo non censurato -->
+            <div class="col-6 border border-end-0 border-black p-4">
+                <h2 class="text-center mb-5 text-success">Uncensored Text</h2>
+                <h5 class="d-inline text-success">Word to censor:</h5>
+                <span class="fs-6 fw-semibold">"<?php echo $word ?>"</span>
+                <h5 class="mt-5 text-success">Text to check:</h5>
+                <p class="fs-6 mb-5 fw-semibold">"<?php echo $text ?>"</p>
+                <h5 class="d-inline text-success">Text length:</h5>
+                <span class="fs-6 fw-semibold">"<?php echo strlen($text) ?>"</span>
             </div>
-            <div class="col-6 border p-4">
-                <h2 class="text-center mb-5">Censored Text</h2>
-                <h5 class="d-inline">Word to censor:</h5>
-                <span class="fs-6 ">"<?php echo $word ?>"</span>
-                <h5 class="mt-5">Text to check (censored):</h5>
-                <p class="fs-6 mb-5">"<?php echo $censoredText; ?>"</p>
-                <h5 class="d-inline">Text length:</h5>
-                <span class="fs-6">"<?php echo strlen($censoredText) ?>"</span>
+            <div class="col-6 border border-black p-4">
+                <!-- testo censurato -->
+                <h2 class="text-center mb-5 text-danger">Censored Text</h2>
+                <h5 class="d-inline text-danger">Word to censor:</h5>
+                <span class="fs-6 fw-semibold">"<?php echo $word ?>"</span>
+                <h5 class="mt-5 text-danger">Text to check (censored):</h5>
+                <p class="fs-6 mb-5 fw-semibold">"<?php echo $censoredText; ?>"</p>
+                <h5 class="d-inline text-danger">Text length:</h5>
+                <span class="fs-6 fw-semibold">"<?php echo strlen($censoredText) ?>"</span>
             </div>
         </section>
     </main>

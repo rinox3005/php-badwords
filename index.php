@@ -12,8 +12,8 @@
 <body>
     <main>
         <!-- Form Section-->
-        <section class="container mt-4 m-auto">
-            <h1 class="text-center mb-5">PHP BADWORDS</h1>
+        <section class="container mt-4 m-auto col-lg-7 col-md-9 col-11">
+            <h1 class="text-center mb-5 text-primary fw-bold">PHP BADWORDS</h1>
             <form action="badwords.php" method="GET">
                 <!-- Word Input -->
                 <div class="mb-3 ">
