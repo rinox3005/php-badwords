@@ -11,17 +11,21 @@
 
 <body>
     <main>
+        <!-- Form Section-->
         <section class="container-sm mt-4 m-auto">
             <h1 class="text-center mb-5">PHP BADWORDS</h1>
             <form action="badwords.php" method="GET">
+                <!-- Word Input -->
                 <div class="mb-3 ">
                     <label for="exampleFormControlInput1" class="form-label">Censored Word</label>
                     <input type="text" class="form-control" name="word" id="wordToCensor" placeholder="Word to censor">
                 </div>
+                <!-- Text Area -->
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Text to check</label>
                     <textarea class="form-control" name="text" id="textToCheck" rows="3"></textarea>
                 </div>
+                <!-- Submit Button -->
                 <div class="col-12">
                     <button class="btn btn-primary" type="submit">Submit</button>
                 </div>
