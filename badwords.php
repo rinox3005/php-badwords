@@ -3,7 +3,10 @@ $word = $_GET['word'];
 $text = $_GET['text'];
 
 // calcolo il testo censurato e lo assegno ad una nuova variabile
-$censoredText = str_replace($word, '***', $text);
+// $censoredText = str_replace($word, '***', $text);
+
+// calcolo il testo censurato a prescindere dalle maiuscole e minuscole
+$censoredText = str_ireplace($word, '***', $text);
 
 // // concatena la due elementi con uno spazio nel mezzo
 // echo $word . ' ' . $text;
